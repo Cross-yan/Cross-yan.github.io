@@ -3,7 +3,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="text/javascript">
-	
+	 function message()
+	{
+      confirm("请输入密码后，再单击确定!");
+  	}
 </script>
 </head>
 <body>
@@ -11,6 +14,9 @@
 <p>It's already 3:37am.</p>
 <p>2016/8/19</p>
 <P>ADD A NEW WORD dddddd</P>
-<input type="button" value="点击" onclick="alert("就是这样")" />
+<form>
+密码:<input name="password" type="password" >
+<input name="确定" type="button" value="确定" onmouseover="message()"/>
+</form>
 </body>
 </html>
